@@ -1,0 +1,6 @@
+if SHIELD_CYRENE_BOARD
+
+config ZMK_KEYBOARD_NAME
+    default "Cyrene Board"
+
+endif # SHIELD_CYRENE_BOARD
