@@ -1,0 +1,7 @@
+if SHIELD_CYRENE_BOARD_HOTSWAP
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "Cyrene Board"
+
+endif

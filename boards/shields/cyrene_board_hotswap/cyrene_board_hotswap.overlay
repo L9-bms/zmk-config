@@ -1,4 +1,4 @@
-#include "cyrene_board.dtsi"
+#include "cyrene_board_hotswap.dtsi"
 
 / {
     kscan0: kscan0 {
@@ -10,8 +10,8 @@
             = <&gpio1 15 (GPIO_ACTIVE_HIGH)>
             , <&gpio0  2 (GPIO_ACTIVE_HIGH)>
             , <&gpio0 29 (GPIO_ACTIVE_HIGH)>
-            , <&gpio0  6 (GPIO_ACTIVE_HIGH)>
-            , <&gpio0 17 (GPIO_ACTIVE_HIGH)>
+            , <&gpio0 31 (GPIO_ACTIVE_HIGH)>
+            , <&gpio1 13 (GPIO_ACTIVE_HIGH)>
             , <&gpio0 24 (GPIO_ACTIVE_HIGH)>
             , <&gpio1 11 (GPIO_ACTIVE_HIGH)>
             , <&gpio0 11 (GPIO_ACTIVE_HIGH)>
@@ -21,7 +21,7 @@
             = <&gpio1  0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio1  6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio1  4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -34,4 +34,3 @@
 &physical_layout_cyrene_board {
     kscan = <&kscan0>;
 };
-
